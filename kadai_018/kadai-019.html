@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="このページは18章の課題です。">
+    <title>18章課題</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <body>
+  <div id="top">
+    <p class="top-child">sample</p>
+    <p class="top-child">sample</p>
+    <p class="top-child">sample</p>
+</div>
+  <div id="middle">
+  <div id="middle-child01"></div>
+  <div id="middle-child02"></div>
+  <div id="middle-child03"></div>
+</div>
+<div id="bottom">
+  <div id="bottom-child01"></div>
+  <div id="bottom-child02"></div>
+  <div id="bottom-child03"></div>
+ </body>
+
+ <!-- ChatGpt -->
+ ##htmlとcssを使い、VsCode上に、大きい箱の中に、小さい箱を２つをバランスよく、右下と左下に配置し、inline要素かblock要素かinline-block要素を使い、コードを記してください。
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boxes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="big-box">
+    <div class="small-box left-bottom"></div>
+    <div class="small-box right-bottom"></div>
+  </div>
+</body>
+</html>
+
+.big-box {
+  width: 400px;
+  height: 300px;
+  border: 2px solid black;
+  position: relative;
+}
+
+.small-box {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  position: absolute;
+}
+
+.left-bottom {
+  left: 0;
+  bottom: 0;
+}
+
+.right-bottom {
+  right: 0;
+  bottom: 0;
+}
