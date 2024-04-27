@@ -1,0 +1,112 @@
+p{
+  font-size: 20px;
+}
+
+body{
+  padding-bottom: 20px;
+}
+
+header{
+  background-color: rgb(244, 79, 79);
+  padding: 10px 0;
+  text-align:center;
+  color: white;
+}
+
+h1{
+  color:rgb(255, 255, 255);
+}
+
+main{
+  padding: 10px;
+}
+
+#parent{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contents{
+ flex-basis: 25%;
+ border: 3px solid rgb(238, 204, 204);
+ padding: 10px 15px;
+ margin: 10px 0;
+ text-align: center;
+}
+
+
+h2{
+  font-size: 20px;
+}
+
+/* 類似要素で赤い点を追加 */
+h2::before {
+  content:"●";
+  color: rgb(239, 111, 139);
+}
+
+p{
+  font-size: 16px;
+}
+.umbrella{
+  font-weight:bold;
+  color: rgb(97, 206, 249);
+}
+
+@media screen and (max-width: 768px) {
+#parent {
+  flex-direction: column;
+}
+
+.contents img {
+  width: 100%; /* 画面いっぱいに広げる */
+  margin: 10px 0;
+}
+
+  h2 {
+  font-size: 30px;
+}
+
+
+p{
+  font-size: 25px;
+}
+
+.contents:not(:first-child)p {  
+  font-weight: bold;
+  color:rgb(97, 206, 249);
+}
+}
+
+.contents img {
+  width: 70%;
+  margin: 10px 0;
+}
+
+footer{
+  background-color: rgb(244, 79, 79);
+  padding: 10px 0;
+  text-align:center;
+  color: white;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: rgb(255, 178, 168);
+}
+
+footer a:visited{
+  color: rgb(193, 234, 251);
+}
+
+.contents h2,
+.contents h1 {
+  border-bottom: 2px dotted; 
+ color: rgb(244, 79, 79);
+  padding-bottom: 10px;
+}
