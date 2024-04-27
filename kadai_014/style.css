@@ -1,0 +1,61 @@
+:root{
+  font-size: 20px; /* ルート要素のフォントサイズを20pxに設定 */
+}
+
+body {
+  font-family: "Arial", "Meiryo", sans-serif; 
+  text-align: center;
+}
+
+h1 {
+font-size: 40px;
+border-bottom: solid 3px rgb(115, 115, 114);
+letter-spacing: 1.2em;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+position: relative;
+color: black;
+}
+
+h1::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  background-color: rgb(115, 115, 114);
+}
+
+
+
+
+h1::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom:-3px;
+  height: 3px;
+  background-color: rgb(115, 115, 114);
+}
+
+p{
+color: black;
+}
+
+.name{
+color: rgb(255,192,203)/* 名前、P、血液型、好きな食べ物の文字色をピンクに設定 */
+}
+
+.sky-blue {
+color: skyblue; /* キーワードで色を指定 */
+}
+
+.pink {
+color: rgb(255,192,203); /* RGB値で色を指定 */
+}
+
+/* div#basic 内の全ての要素を太字にする */
+#basic p {
+font-weight:bold;
+}
+
